@@ -10,7 +10,7 @@ Learn more in the [<u>Reown documentation </u>](https://docs.reown.com/)
 
 Users can sign in using an email address, social account, or by connecting a supported EVM wallet. For email and social logins, a non-custodial wallet is automatically created during onboarding.
 
-## Session Key 
+## Session Key
 
 To make trading fast and seamless, Optivi uses a session key - a temporary signing key that lets you trade without signing every transaction manually, enabling a smooth one-click trading experience.
 
@@ -30,7 +30,7 @@ Learn more in the [<u>Derive documentation </u>](https://docs.derive.xyz/docs/o
 
 ## Managing Positions
 
-### Opening Position 
+### Opening Position
 
 1. Go to the Trade page.
 2. Select the underlying asset (BTC, ETH, SOL, HYPE), expiry date, and strike price.
@@ -38,14 +38,14 @@ Learn more in the [<u>Derive documentation </u>](https://docs.derive.xyz/docs/o
 4. Enter your size and review the order.
 5. Place the order by clicking the button 
 
-### Closing a Position 
+### Closing a Position
 
 1. Navigate to the Positions tab on the bottom of the trading page.
 2. Find the position you want to close.
 3. Click “Limit” button in the “Close” column, set the size and the limit price.
 4. Confirm and wait for the order to be filled.
 
-### Holding to Expiry 
+### Holding to Expiry
 
 If you hold an option through to its expiry date, you don't need to do anything. The Derive protocol automatically settles the position based on a 30-minute TWAP (Time-Weighted Average Price) of the underlying asset's price at expiry.
 
@@ -54,10 +54,11 @@ If you hold an option through to its expiry date, you don't need to do anything.
 
 All options on Optivi are European style - they can only be exercised at expiry, not before.
 
-### \
-Withdraw 
+### \\
 
-To move funds from your Optivi subaccount back to your wallet: 
+Withdraw
+
+To move funds from your Optivi subaccount back to your wallet:
 
 1. Click Withdraw in the dashboard or in the “Balances” tab on the trading page.
 2. Select the asset (USDC), choose one of the supported deposit networks (Base, Ethereum, Arbitrum, or OP Mainnet), and enter the amount.
@@ -67,4 +68,36 @@ Your funds will be sent to your connected wallet address.
 
 Note: Withdrawals cannot be initiated using a session key - this action always requires a direct wallet signature as a security measure.
 
-\
+## Fees:
+
+Optivi applies a simple fee structure depending on whether an order is placed as a maker or taker.
+
+### Base Trading Fees
+
+- Maker base fee: \$0.75 per order (includes Optivi’s \$0.25 broker fee)
+- Taker fee: 0.04% of notional value (includes Optivi’s 0.01% broker fee)
+- Maker fee: 0.01% of notional value
+
+## Opening a Position (buying calls or puts)
+
+Formula:
+
+\$0.75 \+ min(notional × 0.04%, premium × 12.5%)
+
+When opening an options position, the fee is calculated as:
+
+- \$0.75 base fee
+- plus the lower of:
+  - 0.04% of notional value, or
+  - 12.5% of option premium
+
+## **Closing a Position Before Expiry (selling calls or puts)**
+
+Formula:
+
+min(notional × 0.01%, premium × 12.5%)
+
+When closing an options position before expiry (placing limit order to sell), the fee is calculated as the lower of:
+
+- 0.01% of notional value, or
+- 12.5% of option premium
