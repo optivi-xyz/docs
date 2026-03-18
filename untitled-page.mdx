@@ -1,0 +1,53 @@
+---
+title: "About Optivi "
+---
+
+## What is Optivi? 
+
+Optivi is a broker platform designed to simplify access to crypto option markets through a clean and intuitive user interface. Built on top of the Derive Protocol infrastructure, it allows users to access the most liquid markets, with all trades settled fully on-chain through a self-custodial derivatives protocol.
+
+Learn more about Derive - link 
+
+## Official links: 
+
+Website: [<u>https://optivi.xyz/</u>](https://optivi.xyz/)
+
+Platform: [<u>https://app.optivi.xyz/</u>](https://app.optivi.xyz/)
+
+X/Twitter: [https://x.com/optivixyz](https://x.com/optivixyz)
+
+Mail: [contact@optivi.xyz](mailto:contact@optivi.xyz)
+
+## Fees: 
+
+Optivi applies a simple fee structure depending on whether an order is placed as a maker or taker.
+
+### Base Trading Fees
+
+- Maker base fee: \$0.75 per order (includes Optivi’s \$0.25 broker fee)
+- Taker fee: 0.04% of notional value (includes Optivi’s 0.01% broker fee)
+- Maker fee: 0.01% of notional value
+
+### Opening a Position (buying calls or puts)
+
+Formula:
+
+\$0.75 \+ min(notional × 0.04%, premium × 12.5%)
+
+When opening an options position, the fee is calculated as:
+
+- \$0.75 base fee
+- plus the lower of:
+  - 0.04% of notional value, or
+  - 12.5% of option premium
+
+### **Closing a Position Before Expiry (selling calls or puts)**
+
+Formula:
+
+min(notional × 0.01%, premium × 12.5%)
+
+When closing an options position before expiry (placing limit order to sell), the fee is calculated as the lower of:
+
+- 0.01% of notional value, or
+- 12.5% of option premium

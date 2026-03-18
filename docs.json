@@ -13,7 +13,9 @@
       {
         "group": "Docs",
         "pages": [
-          "test"
+          "test",
+          "untitled-page",
+          "using-a-platform"
         ]
       }
     ]
