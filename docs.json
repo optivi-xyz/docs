@@ -58,7 +58,8 @@
     }
   },
   "appearance": {
-    "strict": true
+    "strict": true,
+    "default": "dark"
   },
   "background": {
     "color": {
