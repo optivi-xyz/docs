@@ -1,0 +1,33 @@
+---
+title: "Fees"
+---
+
+### Optivi applies a simple fee structure depending on whether an order is placed as a maker or taker.
+
+## Base Trading Fees
+
+- Maker base fee: \$0.75 per order (includes Optivi’s \$0.25 broker fee)
+- Taker fee: 0.04% of notional value (includes Optivi’s 0.01% broker fee)
+- Maker fee: 0.01% of notional value
+
+## Opening a Position (buying calls or puts)
+
+**Formula**: <kbd>\$0.75 \+ min(notional × 0.04%, premium × 12.5%)</kbd>
+
+When opening an options position, the fee is calculated as:
+
+- \$0.75 base fee
+- plus the lower of:
+  - 0.04% of notional value, or
+  - 12.5% of option premium
+
+## **Closing a Position Before Expiry (selling calls or puts)**
+
+**Formula:**
+
+**min(notional × 0.01%, premium × 12.5%)**
+
+When closing an options position before expiry (placing limit order to sell), the fee is calculated as the lower of:
+
+- 0.01% of notional value, or
+- 12.5% of option premium

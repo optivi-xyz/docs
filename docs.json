@@ -9,14 +9,17 @@
   },
   "favicon": "/favicon.svg",
   "navigation": {
-    "groups": [
+    "pages": [
       {
         "group": "Docs",
         "pages": [
           "untitled-page",
-          "using-a-platform"
+          "using-a-platform",
+          "deposit-and-create-subaccount",
+          "fees"
         ]
-      }
+      },
+      "untitled-page"
     ]
   },
   "logo": "/logo/light.svg",
