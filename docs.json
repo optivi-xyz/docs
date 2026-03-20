@@ -13,12 +13,10 @@
       {
         "group": "Docs",
         "pages": [
-          "untitled-page",
-          "untitled-page",
           "using-a-platform",
           "deposit-and-create-subaccount",
           "fees",
-          "test",
+          "",
           "platfrom"
         ]
       },
@@ -35,8 +33,8 @@
   "navbar": {
     "links": [
       {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "label": "Platform ",
+        "href": "https://app.optivi.xyz/"
       }
     ],
     "primary": {
