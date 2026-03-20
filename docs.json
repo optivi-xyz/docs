@@ -16,7 +16,6 @@
           "using-a-platform",
           "deposit-and-create-subaccount",
           "fees",
-          "",
           "platfrom"
         ]
       },
@@ -40,7 +39,7 @@
     "primary": {
       "type": "button",
       "label": "Launch App",
-      "href": "app.optivi.xyz"
+      "href": "https://app.optivi.xyz"
     }
   },
   "contextual": {
